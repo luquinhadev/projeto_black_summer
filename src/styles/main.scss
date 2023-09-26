@@ -1,5 +1,22 @@
-$bgColor: rgb(123, 108, 192);
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+$bgColor: rgb(30, 30, 31);
+$corTextoPrincipal: silver;
+$corTextoSecundario: #fff;
 
 body {
     background-color: $bgColor;
+    overflow-x: hidden;
 }
+
+
+
+
+

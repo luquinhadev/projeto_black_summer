@@ -1,0 +1,60 @@
+$corTextoSecundario: #fff;
+
+
+.hero {
+    -webkit-mask-image: linear-gradient(to right, transparent 1%, rgb(24, 23, 23) 25%);
+    &__content {
+        max-width: 640px;
+        position: relative;
+
+        .title--small {
+            padding-top: 28vw;
+            margin-left: 21vw;
+            position: absolute;
+        }
+
+        &__branding {
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            position: absolute;
+            margin-left: 9vw;
+            margin-top: 12vw;
+            
+        }
+    }
+}
+
+.button {
+    &__hero__btn {
+        position: absolute;
+        font-size: 24px;
+        margin: 21vw;
+        padding: 20px;
+    }
+}
+
+.sobre {
+    p {
+        color: $corTextoSecundario;
+        text-align: center;
+        padding-top: 10vw;
+        margin-left: 24vw;
+        position: absolute;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding: 32px;
+        margin-left: 8vw;
+        color: $corTextoSecundario;
+    }
+
+    &__blacksummer {
+        width: 100%;
+        max-width: 260px;
+        margin-left: 8vw;
+        
+    }
+}
