@@ -1,16 +1,30 @@
 $corTextoSecundario: #fff;
 
+* {
+    font-family: sans-serif;
+}
 
 .hero {
-    -webkit-mask-image: linear-gradient(to right, transparent 1%, rgb(24, 23, 23) 25%);
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent 1%, rgb(24, 23, 23) 15%);
     &__content {
         max-width: 640px;
         position: relative;
+        p {
+            position: absolute;
+            text-align: center;
+            color: $corTextoSecundario;
+            margin-left: 15vw;
+            margin-top: 21vw;
+            font-size: 16px;
+        }
 
         .title--small {
-            padding-top: 28vw;
-            margin-left: 21vw;
+            padding-top: 30vw;
+            margin-left: 21.5vw;
             position: absolute;
+            color: $corTextoSecundario;
+            font-size: 24px;
         }
 
         &__branding {
@@ -26,35 +40,97 @@ $corTextoSecundario: #fff;
 }
 
 .button {
+    text-align: center;
     &__hero__btn {
+        background-color: transparent;
+        color: $corTextoSecundario;
         position: absolute;
-        font-size: 24px;
-        margin: 21vw;
-        padding: 20px;
+        padding: 14px 24px;
+        margin-top: 25vw;
+        margin-left: 3vw;
+        font-size: 26px;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(83, 82, 82);
+        }
     }
 }
 
 .sobre {
+
+    &__blacksummer__btn {
+        &:hover {
+            background-color: rgb(124, 114, 114);
+        }
+
+        margin-left: 14vw;
+        padding: 15px;
+        margin-top: 1vw;
+        display: block;
+        background-color: rgb(71, 61, 61);
+        color: $corTextoSecundario;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+    }
+        
     p {
         color: $corTextoSecundario;
         text-align: center;
-        padding-top: 10vw;
-        margin-left: 24vw;
+        padding-top: 15vw;
+        margin-left: 28vw;
         position: absolute;
         font-size: 18px;
     }
 
     h2 {
-        font-size: 28px;
-        padding: 32px;
-        margin-left: 8vw;
+        margin-top: 28px;
+        font-size: 32px;
+        padding: 4vw;
+        margin-left: 7vw;
         color: $corTextoSecundario;
     }
 
     &__blacksummer {
         width: 100%;
-        max-width: 260px;
-        margin-left: 8vw;
+        max-width: 320px;
+        margin-left: 9vw;
         
+    }
+}
+
+
+.series {
+    &__semelhantes {
+        text-align: center;
+        font-size: 24px;
+        padding: 5vw 0;
+        color: $corTextoSecundario;
+        margin-top: 32px;
+    }
+
+    &__semelhantes__list {
+        list-style-type: none;
+        gap: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2vw 5.6vw;
+        &__semelhantes__list__item {
+            img {
+            max-width: 100%;
+            border-radius: 4px;
+            }
+        }
+    }
+
+}
+
+.last {
+    &__item {
+        max-width: 90%;
+        margin-left: 5vw;
     }
 }
