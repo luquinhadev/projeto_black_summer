@@ -42,7 +42,7 @@ $corTextoSecundario: #fff;
 .button {
     text-align: center;
     &__hero__btn {
-        background-color: transparent;
+        background-color: rgb(201, 22, 22);
         color: $corTextoSecundario;
         position: absolute;
         padding: 14px 24px;
@@ -50,10 +50,11 @@ $corTextoSecundario: #fff;
         margin-left: 3vw;
         font-size: 26px;
         border-radius: 8px;
+        border: none;
         cursor: pointer;
 
         &:hover {
-            background-color: rgb(83, 82, 82);
+            background-color: rgb(202, 99, 99);
         }
     }
 }
@@ -102,7 +103,6 @@ $corTextoSecundario: #fff;
     }
 }
 
-
 .series {
     &__semelhantes {
         text-align: center;
@@ -125,12 +125,41 @@ $corTextoSecundario: #fff;
             }
         }
     }
-
 }
 
 .last {
     &__item {
         max-width: 90%;
         margin-left: 5vw;
+        position: absolute;
+        display: flex;
+    }
+
+    &__item__text {
+        color: $corTextoSecundario;
+        position: relative;
+        padding: 20vw;
+        font-size: 32px;
+    }
+    p {
+        color: $corTextoSecundario;
+        position: relative;
+        font-size: 18px;
+        text-align: center
+        
+    }
+}
+
+.footer {
+    &__item {
+        max-width: 200px;
+        padding: 9vw 0;
+        margin-left: 44vw;
+    }
+    p {
+        color: $corTextoSecundario;
+        background-color: rgb(167, 22, 22);
+        padding: 12px;
+        padding-left: 3vw;
     }
 }
